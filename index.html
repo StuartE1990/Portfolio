@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resources/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="resources/script.js"></script>
+    <title>Stuart Edwards - Full Stack</title>
+</head>
+<body>
+    <div class=grid>
+        <header>
+            <div id="headerlogo">
+                <h1>Stuart Edwards</h1>
+            </div>
+        </header>
+        <div class="nav">   
+            <a href="#headerlogo"><div id="navhome">Home</div></a>
+            <a href="#about"><div id="navabout">About</div></a>
+            <a href="#projects"><div id="navprojects">Projects</div></a>
+            <a href="#skills"><div id="navskills">Skills</div></a>
+            <a href="#contact"><div id="navcontact">Contact</div></a>
+        </div>
+        <div class="banner">
+            <h2 id="hello">HELLO.</h2>
+            <p>It's great to meet you.<br>Let's do something extraordinary.</p>
+        </div>
+        <div class="about" id="about">
+            <h2>Let's get to know each other.</h2>
+            <p>My name is Stuart and I'm 31 years old, born and raised in the UK with a passion for sports, travel and gaming! <br> I have recently got into coding and working my way to a career in full stack development, at the moment I am learning CSS, HTML & JS!</p>
+            <img src="./resources/images/rome.jpg" alt="Rome Picture">
+        </div>
+        <div class="projects" id="projects">
+            <p>I thought you'd like to see what I've been up to..</p>
+            <a href="https://github.com/StuartE1990?tab=repositories" class="button">Click Here</a>
+        </div>
+        <div class="skills" id="skills">
+            <h2>I've been learning..</h2>
+            <img src="resources/images/html5logo.png" id="htmllogo" alt="html logo">
+            <img src="resources/images/csslogo.png" id="csslogo" alt="css3 logo">
+            <img src="resources/images/jsdlogo.png" id="jslogo" alt="js logo">
+        </div>
+        <div class="contact" id="contact">
+            <h2>Let's Chat.</h2>
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <br>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <br>
+                <label for="lname">Last Name</label>
+                <br>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">           
+                <br>
+                <label for="subject">Subject</label>
+                <br>
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            
+              </form>
+        </div>
+        <footer>
+            <a href="mailto: stuart.edwards1990@gmail.com"><p>Stuart.Edwards1990@Gmail.com<p></a>
+        </footer>
+    </div>
+</body>
+</html>
