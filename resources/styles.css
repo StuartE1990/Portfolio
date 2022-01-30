@@ -16,7 +16,7 @@ h2 {
 /* ----GRID CONTAINER---- */
 .grid {
     display: grid;
-    grid-template: 135px repeat(4, 1000px) 500px 200px/ repeat(6, 1fr);
+    grid-template: 135px repeat(2, 1000px) 600px 1000px 500px/ repeat(6, 1fr);
     justify-content: center;
     margin: 0;
 }
@@ -31,7 +31,7 @@ header {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
     position: fixed;
-    width: 100%
+    width: 98%;
 }
 
 #headerlogo {
@@ -51,7 +51,12 @@ header {
     font-size: 1.2rem;
 }
 
+/* -----TABLET------ */
+
 @media screen and (max-width: 768px) {
+    header {
+        width: 95%;
+    }
     #headerlogo {
         display: none;
     }
@@ -63,6 +68,14 @@ header {
     }
     .grid {
         grid-template: 135px 700px 1000px 500px 1000px 500px 200px/ repeat(6, 1fr);
+    }
+}
+
+/* -----MOBILE------ */
+
+@media screen and (max-width: 480px) {
+    header {
+        width: 96%;
     }
 }
 
@@ -102,6 +115,7 @@ header {
     font-size: 4rem;
 }
 
+
 /* ----ABOUT---- */
 
 .about {
@@ -138,6 +152,8 @@ header {
     border: 3px solid linen;
     border-radius: 0.4rem;
 }
+
+/* -----TABLET------ */
 
 @media screen and (max-width: 768px) {
     .about {
@@ -186,6 +202,8 @@ header {
     border-right: 3px solid linen;
 }
 
+/* -----TABLET------ */
+
 @media screen and (max-width: 768px) {
 .projects {
     display: block;
@@ -214,39 +232,97 @@ header {
 .skills #htmllogo {
     grid-area: 2/1/5/2;
     margin: auto;
+    width: 200px;
+    height: auto;
 }
 
 .skills #htmllogo:hover {
-    grid-area: 2/1/5/2;
-    margin: auto;
+    width: 250px;
 }
 
 .skills #csslogo {
     grid-area: 2/2/5/3;
     margin: auto;
+    width: 200px;
+    height: auto;
+}
+
+.skills #csslogo:hover {
+    width: 250px;
 }
 
 .skills #jslogo {
     grid-area: 2/3/5/4;
     margin: auto;
+    width: 200px;
+    height: auto;
 }
 
+.skills #jslogo:hover {
+    width: 250px;
+}
+
+.skills #htmltext {
+    grid-area: 3/1/5/2;
+    text-align: center;
+    font-size: 5rem;
+    opacity: 0;
+}
+
+.skills #csstext {
+    grid-area: 3/2/5/3;
+    text-align: center;
+    font-size: 5rem;
+    opacity: 0;
+}
+
+.skills #jstext {
+    grid-area: 3/3/5/4;
+    text-align: center;
+    font-size: 5rem;
+    opacity: 0;
+}
+
+
+/* -----TABLET------ */
+
 @media screen and (max-width: 768px) {
+    .skills {
+        display: grid;
+        grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+    }
+
     .skills h2 {
         text-align: left;
+        grid-area: 1/2/2/3;
     }
 
     .skills #jslogo{
-        width: 150px;
+        grid-area: 4/2/5/3;
+        width: 130px;
         height: auto;
     }
     .skills #htmllogo{
-        width: 150px;
+        grid-area: 2/2/3/3;
+        width: 130px;
         height: auto;
     }
     .skills #csslogo{
-        width: 150px;
+        grid-area: 3/2/4/3;
+        width: 130px;
         height: auto;
+    }
+    .skills #htmllogo:hover {
+        width: 150px;
+    }
+    .skills #jslogo:hover {
+        width: 150px;
+    }
+    .skills #csslogo:hover {
+        width: 150px;
+    }
+    .skills p {
+        display: none;
     }
 }
 
@@ -286,6 +362,14 @@ input[type=submit]:hover {
     background-color: #66fcf1;
 }
 
+/* ----TABLET---- */
+
+@MEDIA screen and (max-width: 768px) {
+    .contact h2 {
+        font-size: 2rem;
+    }
+}
+
 /* ----FOOTER---- */
 
 footer {
@@ -301,4 +385,21 @@ footer a {
 
 footer a:hover {
     color: white;
+}
+
+/* ----TABLET---- */
+
+@MEDIA screen and (max-width: 768px) {
+    footer {
+        font-size: 3rem;
+    }
+}
+
+
+/* ----MOBILE---- */
+
+@MEDIA screen and (max-width: 468px) {
+    footer {
+        font-size: 3rem;
+    }
 }
